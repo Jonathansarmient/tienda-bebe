@@ -1,8 +1,9 @@
 "use client"; // Indica que es un componente cliente
 
 import { useEffect, useState } from "react";
-import { db } from "../firebaseConfig";
+
 import { collection, getDocs } from "firebase/firestore";
+import { db } from "@/firebase/firebaseConfig";
 
 export default function Productos() {
   const [productos, setProductos] = useState([]);

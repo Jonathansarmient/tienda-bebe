@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import { db, auth } from "../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useRouter } from "next/navigation";
+import { auth, db } from "@/firebase/firebaseConfig";
 
 export default function Admin() {
   const [nombre, setNombre] = useState("");

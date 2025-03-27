@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import { db } from "../firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
+import { db } from "@/firebase/firebaseConfig";
 
 export default function Home() {
   const [productos, setProductos] = useState([]);

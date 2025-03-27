@@ -1,7 +1,7 @@
-import dynamic from "next/dynamic";
+"use client"
 
-// Carga `Productos.js` de forma dinámica sin SSR
-const Productos = dynamic(() => import("./components/Productos"), { ssr: false });
+import Productos from "@/components/Productos";
+
 
 export default function Home() {
   return (
